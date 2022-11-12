@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meteo</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="./script.js" defer></script>
+        <link rel="shortcut icon" href="./media/loaderIcon.svg" type="image/x-icon" />
+    </head>
+    <body>
+        <section class="window">
+            <div data-switch="1" data-unit="c" class="unitContainer cUnit">
+                <div class="unit">℃</div>
+                <div class="unit">℉</div>
+            </div>
+            <form action="">
+                <input id="search" placeholder="Cauta o locatie ..." type="text" />
+                <button id="searchBtn" type="submit"></button>
+            </form>
+            <div class="currentConditions">
+                <div class="locationContainer">
+                    <img class="conditionIcon" src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="" />
+                    <div>
+                        <h1 class="region"></h1>
+                        <h3 class="condition"></h3>
+                    </div>
+                </div>
+                <div class="temperatureContainer">
+                    <h1 class="temperature"></h1>
+                    <h3 class="humidity"></h3>
+                </div>
+            </div>
+            <div class="cardsContainer"></div>
+            <div class="loader">
+                <div class="loaderIcon"></div>
+            </div>
+        </section>
+    </body>
+</html>
