@@ -50,7 +50,7 @@ function displayData() {
     });
 }
 
-function displayHeader({ region, currentConditions, currentConditions: { comment, humidity, iconURL, precip, temp } }, unit) {
+function displayHeader({ region, currentConditions: { comment, humidity, iconURL, precip, temp } }, unit) {
     $(".conditionIcon").src = iconURL;
     $(".region").innerHTML = region;
     $(".condition").innerHTML = comment;
